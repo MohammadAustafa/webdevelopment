@@ -87,7 +87,9 @@
 
 	}
 	@media screen and (max-width: 600px) {
-
+		.col-25, .col-75, input[type=submit] {
+    		width: 100%;
+    		margin-top: 0;
 	}
 	</style>
 </head>
@@ -105,12 +107,24 @@
 		<select id="country" name="country">
 			<option value="england">England</option>
 			<option value="usa">USA</option>
-			<option value="canana">Canana</option>
+			<option value="canada">Canada</option>
 			<option value="pakistan">Pakistan</option>
 			<option value="italy">Italy</option>
 			<option value="france">France</option>
 			<option value="germany">Germany</option>
 		</select>
+		
+		<label for="city">City</label>
+		<select id="city" name="city">
+			<option value="london">London</option>
+			<option value="washington,d.c.">Washington, D.C.</option>
+			<option value="ottawa">Ottawa</option>
+			<option value="islamabad">Islamabad</option>
+			<option value="rome">Rome</option>
+			<option value="paris">Paris</option>
+			<option value="berlin">Berlin</option>
+		</select>
+		
 		<textarea id="description" name="description" placeholder="Description..."></textarea>
 
 			<input type="submit" value="Submit"
